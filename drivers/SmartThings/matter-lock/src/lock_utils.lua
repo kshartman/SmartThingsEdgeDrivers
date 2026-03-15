@@ -1,16 +1,5 @@
--- Copyright 2022 SmartThings
---
--- Licensed under the Apache License, Version 2.0 (the "License");
--- you may not use this file except in compliance with the License.
--- You may obtain a copy of the License at
---
---     http://www.apache.org/licenses/LICENSE-2.0
---
--- Unless required by applicable law or agreed to in writing, software
--- distributed under the License is distributed on an "AS IS" BASIS,
--- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
--- See the License for the specific language governing permissions and
--- limitations under the License.
+-- Copyright 2022 SmartThings, Inc.
+-- Licensed under the Apache License, Version 2.0
 
 local lock_utils = {
   -- Lock device field names
@@ -24,7 +13,33 @@ local lock_utils = {
   COTA_CRED = "cotaCred",
   COTA_CODE_NAME = "ST Remote Operation Code",
   COTA_CRED_INDEX = "cotaCredIndex",
-  NONFUNCTIONAL = "nonFunctional"
+  NONFUNCTIONAL = "nonFunctional",
+  COTA_READ_INITIALIZED = "cotaReadInitialized",
+  BUSY_STATE = "busyState",
+  COMMAND_NAME = "commandName",
+  USER_NAME = "userName",
+  USER_INDEX = "userIndex",
+  USER_TYPE = "userType",
+  CRED_INDEX = "credentialIndex",
+  CRED_DATA = "credentialData",
+  SCHEDULE_INDEX = "scheduleIndex",
+  SCHEDULE_WEEK_DAYS = "scheduleWeekDays",
+  SCHEDULE_START_HOUR = "scheduleStartHour",
+  SCHEDULE_START_MINUTE = "scheduleStartMinute",
+  SCHEDULE_END_HOUR = "scheduleEndHour",
+  SCHEDULE_END_MINUTE = "scheduleEndMinute",
+  SCHEDULE_LOCAL_START_TIME = "scheduleLocalStartTime",
+  SCHEDULE_LOCAL_END_TIME = "scheduleLocalEndTime",
+  VERIFICATION_KEY = "verificationKey",
+  GROUP_ID = "groupId",
+  GROUP_RESOLVING_KEY = "groupResolvingKey",
+  ISSUER_KEY = "issuerKey",
+  ISSUER_KEY_INDEX = "issuerKeyIndex",
+  ENDPOINT_KEY = "endpointKey",
+  ENDPOINT_KEY_INDEX = "endpointKeyIndex",
+  ENDPOINT_KEY_TYPE = "endpointKeyType",
+  DEVICE_KEY_ID = "deviceKeyId",
+  COMMAND_REQUEST_ID = "commandRequestId"
 }
 local capabilities = require "st.capabilities"
 local json = require "st.json"
